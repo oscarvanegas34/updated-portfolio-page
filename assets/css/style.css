@@ -1,0 +1,292 @@
+/* THE SECTION BELOW APPLY STYLING TO: INDEX, PORTFOLIO & CONTACT*/
+
+/* THIS SECTION CONTAIN ALL THE ELEMENT FOR THE 3 HTML */
+
+body {
+    background: url('../images/diagonal-squares.png') repeat;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    overflow: auto;
+    color: #777777;
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Georgia', Times, 'Times New Roman', Times, serif, serif;
+    font-weight: bold;
+    color: #4aaaa5;
+}
+
+header {
+    background: #ffffff;
+    border-bottom: 3px solid #cccccc;
+    width: 100%;
+    padding: 0 0 20px 0;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+}
+
+header h1 {
+    background: #4aaaa5;
+    color: #ffffff;
+    display: inline-block;
+    padding: 15px;
+    font-size: 30px;    
+    position: absolute;
+    left: 12%;
+}
+
+nav {
+    width: 300px;
+    float: right;
+    margin: 25px 94px 0 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #777777;
+    font-size: 16px;
+    padding: 5px 15px;
+    border-right: 2px solid #4aaaa5; 
+}
+
+nav ul li:last-child a {
+    border-right: none;
+    padding-right: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+form label{
+    font-size: 18px;
+    display: block;
+    
+}
+
+form input{
+    
+    width: 100%;
+    display: block;
+    padding: 8px 0;
+}
+
+form button {
+    width: 100px;
+    background: #4aaaa5;
+    color: #ffffff;
+    padding: 8px 0;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form textarea {
+    width: 100%;
+}
+
+
+footer {
+    background: #666666;
+    border-top: 5px solid #4aaaa5;
+    width: 100%;
+    color:#ffffff;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* THIS SECTION CONTAIN ALL THE CLASSES FOR THE 3 HTML */
+
+.clearfix {
+    display: block;
+    clear: both;
+}
+
+.content{
+    background: #ffffff;
+    padding: 25px;
+    border: 3px solid #666666;    
+    float: left;
+    margin-bottom: 100px;
+    margin-top: 120px;
+}
+
+
+.content h2 {
+    font-size: 24px;
+    padding: 25px 0 0 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #dddddd;
+}
+
+.inline-img {
+    float: left;
+    margin: 0 15px 15px 0;
+    border: 2px solid #777777;
+}
+
+.content-portfolio {
+    width: 905px;
+    font-size: 24px;    
+    border-bottom: 2px solid #dddddd;
+    
+}
+
+.content-contact {
+    width: 905px    
+}
+
+.portfolio-item {
+    position: relative;
+    background-color: rgba(0,0,0, .5);
+    margin-bottom: 20px;
+    width: 45%;
+    height: 200px;
+    float: left;
+    border: 2px solid #dddddd;
+
+}
+
+.portfolio-item:nth-of-type(even) {
+   float: right; 
+}
+
+.portfolio-item h4 {
+    background: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    position: absolute;
+    bottom: 15px;
+}
+
+/* THIS SECTION CONTAIN ALL ID'S FOR THE 3 HTML */
+
+#port1 {
+    background: url('../images/hangman.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#port2 {
+    background: url('../images/rpg-game.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#port3 {
+    background: url('../images/trivia-game.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#port4 {
+    background: url('../images/rutgers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#port5 {
+    background: url('../images/rock-paper-scissors.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* THE SECTION BELOW INCLUDE THE MEDIA QUERIES FOR A WIDTH OF 980PX, 768PX AND 640PX FOR THE INDEX, PORTFOLIO AND CONTACT */
+
+/* The section below is for the media query at 980px  */
+
+@media screen and (max-width: 980px) {
+ body {
+    width: 770px;
+    
+ }
+
+ .content {
+     width: 700px;     
+ }
+
+ .content-contact {
+    height: 665px;
+}
+
+form textarea {
+    height: 310px;
+}
+
+}
+
+/* The section below is for the media query at 780px  */
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 660px;
+        
+     }
+
+     .content {
+        width: 600px;
+        
+    }
+}
+
+/* The section below is for the media query at 640px  */
+
+@media screen and (max-width: 640px) {
+    body {
+        width: 560px;        
+     }
+
+     .content {
+        width: 500px;
+        margin-top: 140px;        
+    }
+
+    .content-portfolio {
+        font-size: 18px;
+    }
+  
+    .content-contact {
+        height: 635px;
+    }
+
+    form textarea {
+        height: 280px;
+    }
+
+    img {
+        width: 220px;
+        height: 155px;
+    }
+
+    header {
+        position: absolute;
+        padding: 0 0 15px 0;
+    }
+
+    header h1 {
+        width: 100%;
+        left: 0%;
+        padding: 5px 0% 8px 0%;
+        text-align: center;        
+    }
+
+    ul {
+        width: 100%;
+        margin-top: 28px;          
+    }
+
+    
+}

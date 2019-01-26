@@ -1,0 +1,92 @@
+/* This section add the background to all pages */
+body{
+    background:url('../images/diagonal-squares.png') repeat; 
+}
+/* The #name was created to format the name */
+
+#name{
+    margin: 0 0 0 150px;
+    font-size: 30px;
+    background: #4aaaa5;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;   
+}
+
+/* This clases add an extra format to the corrunt form */
+.navbar-light{
+    padding: 0%;
+    border-bottom: 2px solid #cccccc;
+}
+
+.nav-pills{
+    margin: 0 135px 0 0;   
+}
+
+/* This section is to add the line between the navbar */
+.nav-item { 
+    border-right: 2px solid #4aaaa5;
+}
+
+.nav-item:last-child {
+    border-right: none;
+}
+
+/* This class just change the color of the background */
+a{
+    color: #777777;
+}
+
+/* This section add extra customization to the container class */
+.container{
+    border: 2px solid #cccccc;
+    margin: 80px auto;
+    width: 960px;
+    background: white;     
+}
+
+/* This section modify the header of each page */
+.page-header{
+    color: #4aaaa5;
+    border-bottom: 2px solid #cccccc;
+    padding-top: 10px;
+}
+
+/* This section modify the row in the index page */
+#second-row{
+    margin: 20px 20px 10px 12px;
+}
+
+/*  This section modify the footer on each page */
+footer{
+    border-top: 2px solid #4aaaa5;
+    color: white;
+    background-color: #777777;
+    /* bottom: 30%; */
+    /* position: fixed; */
+    width: 100%;    
+    margin-top: 10%;
+}
+
+/*  This modify the button in the contact page */
+.btn {
+    background-color: #4aaaa5;
+    border: #4aaaa5;
+}
+
+/* This section modify the cards inside the portfolio */
+.card-title {
+    margin-bottom: 10px;
+    background-color: #4aaaa5;
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    font-size: 20px;  
+    
+}
+
+/*This code change the size of the text area*/
+textarea.form-control {
+    height: 265px;
+}
