@@ -11,17 +11,32 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h5, h6{
     font-family: 'Georgia', Times, 'Times New Roman', Times, serif, serif;
     font-weight: bold;
     color: #4aaaa5;
 }
 
+h4 {
+    font-family: 'Georgia', Times, 'Times New Roman', Times, serif, serif;
+    /* font-weight: bold; */
+    color: #777777; 
+}
+
+#resume {
+color: #777777;
+}
+
+#GitHub {
+    color: #777777;
+    }
+
+
 header {
     background: #ffffff;
     border-bottom: 3px solid #cccccc;
     width: 100%;
-    padding: 0 0 20px 0;
+    padding: 0 0 60px 0;
     position: fixed;
     left: 0;
     z-index: 1;
